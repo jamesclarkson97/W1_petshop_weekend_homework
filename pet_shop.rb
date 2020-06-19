@@ -7,6 +7,12 @@ def total_cash(shop_name)
 end
 
 def add_or_remove_cash(shop_name, value)
-    shop_name[:admin][:total_cash] += value
-    return total_cash(shop_name)
+    # if value > 0
+        shop_name[:admin][:total_cash] += value
+        return total_cash(shop_name)
+    # elsif value < 0
+    #     shop_name[:admin][:total_cash] -= value
+    #     return total_cash(shop_name)
+    # end
 end
+
