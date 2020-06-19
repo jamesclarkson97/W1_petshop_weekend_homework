@@ -16,3 +16,6 @@ def add_or_remove_cash(shop_name, value)
     # end
 end
 
+def pets_sold(shop_name)
+    return shop_name[:admin][:pets_sold]
+end
