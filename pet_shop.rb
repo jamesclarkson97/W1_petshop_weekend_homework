@@ -76,3 +76,15 @@ def customer_can_afford_pet(customer, new_pet)
         return false
     end
 end
+
+def sell_pet_to_customer(shop_name, pet, customer)
+    add_pet_to_customer(customer, pet)
+    increase_pets_sold(shop_name, 1)
+    remove_customer_cash(customer, pet[:price])
+    add_or_remove_cash(shop_name, pet[:price])
+end
+
+    # increase customer pet count
+    # increase shop pets sold
+    # check customer cash
+    # increase shop total cash
